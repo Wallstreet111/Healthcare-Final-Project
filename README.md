@@ -1,6 +1,6 @@
 # Predicting Disease Outcomes from Lifestyle Factors
 
-This project aims to predict the prognosis of various diseases using a healthcare dataset. The dataset includes features such as age, sex, general health, checkup frequency, exercise habits, and smoking history. Our goal is to develop a predictive model to enhance disease prognosis accuracy.
+This project aims to predict the prognosis of various diseases using a healthcare dataset. The dataset includes features such as age, sex, general health, checkup frequency, exercise habits, and smoking history. My goal is to develop a predictive model to enhance disease prognosis accuracy.
 
 [Visit the Quarto Website](link-to-your-quarto-website)
 
