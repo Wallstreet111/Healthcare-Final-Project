@@ -1,13 +1,8 @@
-# Predicting Disease Outcomes from Lifestyle Factors
+# Heart Disease Prediction by Age and Gender
 
-This project aims to predict the prognosis of various diseases using a healthcare dataset. The dataset includes features such as age, sex, general health, checkup frequency, exercise habits, and smoking history. My goal is to develop a predictive model to enhance disease prognosis accuracy.
+This project focuses on predicting the likelihood of heart disease based on age and gender. The dataset used includes features such as age, sex, and other lifestyle factors. The goal is to develop a predictive model to better understand how age and gender influence the risk of heart disease.
 
-[Visit the Quarto Website](link-to-your-quarto-website)
-
-## Directory Structure
-- `data/`: Contains the raw and processed data files.
-- `scripts/`: Includes R scripts for data preprocessing, analysis, and modeling.
-- `notebooks/`: R Markdown files for exploratory data analysis and model training.
+[Visit the Quarto Website](https://wpetrus.quarto.pub/heart-disease-prediction-by-age-and-gender/Model.html)
 
 ## Contact
-For any questions or feedback, please contact [Wallstreet Petrus-Nihi](moyopetrus@gmail.com).
+For any questions or feedback, please contact [Wallstreet Petrus-Nihi](mailto:moyopetrus@gmail.com).
