@@ -1,0 +1,20 @@
+---
+title: "Source"
+author: "Wallstreet Petrus-Nihi"
+format: html
+editor: visual
+---
+
+## Source
+
+The data for this project was sourced from Kaggle's "Heart Disease EDA, FE, Resampling, XGBoost" dataset ([link](https://www.kaggle.com/code/tumpanjawat/heart-disease-eda-fe-resam-xgboost)). This dataset includes detailed information about various health metrics, including age, sex, chest pain type, blood pressure, cholesterol, fasting blood sugar, resting ECG, maximum heart rate, exercise-induced angina, ST depression, and more.
+
+To prepare the data for analysis, I performed the following steps:
+
+1.  **Loading the Data**: The dataset was loaded from the provided CSV files into a data frame in R for further processing.
+
+2.  **Data Cleaning**: Some entries had missing values which were handled appropriately. I ensured that the data types were consistent and ready for analysis.
+
+3.  **Data Filtering**: For specific analyses, such as identifying trends in health metrics or predicting heart disease, I filtered the dataset to include only relevant metrics.
+
+No observations were removed from the dataset unless they contained critical missing information that could not be resolved.

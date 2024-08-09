@@ -1,0 +1,51 @@
+---
+title: "Visual Analysis"
+author: "Wallstreet Petrus-Nihi"
+editor: visual
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+### Research Question: How does the risk of heart disease vary across different age groups and between genders?
+
+## **Introduction**
+
+*Heart disease is one of the leading causes of death worldwide. By analyzing various lifestyle factors, we can predict the likelihood of heart disease and take preventive measures. This project aims to use a healthcare dataset to develop a predictive model for heart disease outcomes based on lifestyle factors.*
+
+### **Key Plot: Age vs Heart Disease**
+
+The following plot highlights the relationship between age categories and the likelihood of heart disease. It shows that the risk of heart disease increases with age.
+
+```{r}
+library(ggplot2) 
+data <- read.csv('C:/Data/CVD_cleaned.csv')
+# Key Plot: Age vs Heart Disease 
+ggplot(data, aes(x = Age_Category, fill = Heart_Disease)) + geom_bar(position = "dodge") + labs(title = "Age Category vs Heart Disease", x = "Age Category", y = "Number of Individuals with and without Heart Disease", fill = "Heart Disease") + theme_minimal()
+```
+
+Explanation: This plot shows the number of individuals in each age category who have and do not have heart disease. The y-axis represents the number of individuals. For example, in the age category "50-59", there might be 120 individuals without heart disease and 30 individuals with heart disease. The plot highlights that older age groups tend to have a higher incidence of heart disease, indicating age as a significant risk factor.
+
+### **Distribution of BMI**
+
+Understanding the distribution of BMI helps in identifying obesity trends, which is a significant risk factor for heart disease.
+
+```{r}
+# Distribution of BMI
+ggplot(data, aes(x = BMI)) + 
+  geom_histogram(aes(y = ..density..), bins = 30, fill = "blue", alpha = 0.7) + 
+  geom_density(alpha = 0.2, fill = "#FF6666") + 
+  ggtitle("Distribution of BMI") + 
+  labs(x = "BMI", y = "Density of Individuals") + 
+  theme_minimal()
+
+```
+
+Explanation:
+
+This histogram shows the distribution of Body Mass Index (BMI) among individuals in the dataset. The x-axis represents BMI values, while the y-axis shows the density, which helps us understand how frequently different BMI values occur in the dataset.
+
+In simpler terms, the histogram and density plot together show which BMI values are more common and which are less common. For instance, if the density is higher at a particular BMI value, it means that many individuals in the dataset have that BMI. Conversely, a lower density means fewer people have that BMI.
+
+Interestingly, although a higher BMI is generally linked to obesity, which is a known risk factor for heart disease, this plot indicates that many people with lower BMIs also have heart disease. This suggests that BMI alone doesn’t fully explain heart disease risk. Other factors, such as overall health, lifestyle, and genetics, are also important. Therefore, while BMI is a useful indicator, it should be considered along with other health factors when assessing heart disease risk.

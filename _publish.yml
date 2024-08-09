@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: dd0c5877-4b30-484d-8b9b-a2c7dad9fcb7
+      url: 'https://wpetrus.quarto.pub/heart-disease-prediction-by-smoking-and-alcohol-consumption'

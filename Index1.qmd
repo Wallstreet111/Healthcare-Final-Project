@@ -1,0 +1,25 @@
+---
+title: "MODELS"
+author: "Wallstreet Petrus-Nihi"
+editor: visual
+---
+
+### Heart Disease Prediction by Smoking and Alcohol Consumption
+
+#### **Research Question**: How does the risk of heart disease vary across different age groups and between genders?
+
+------------------------------------------------------------------------
+
+### Context
+
+Heart disease remains a leading cause of mortality globally, with smoking and alcohol consumption being significant risk factors. Understanding how different levels of these behaviors affect heart disease risk is crucial for developing effective preventive strategies. Using data modeling techniques, we can visualize and analyze how variations in smoking and alcohol consumption contribute to heart disease risk. This approach helps reveal underlying patterns, supporting the development of more effective prevention strategies and informing public health initiatives aimed at reducing heart disease incidence.
+
+------------------------------------------------------------------------
+
+## Logistic Regression Model
+
+The logistic regression model is given by:
+
+$$
+\log \left( \frac{1 - p}{p} \right) = \beta_0 + \beta_1 \cdot \text{Age Category} + \beta_2 \cdot \text{Gender} + \epsilon
+$$

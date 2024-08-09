@@ -1,2 +1,13 @@
 # Predicting Disease Outcomes from Lifestyle Factors
-Heart disease is a leading cause of death worldwide. This project aims to understand the relationship between various lifestyle factors and the risk of heart disease. Utilizing data from a comprehensive study, I investigate how factors such as smoking history, alcohol consumption, and BMI influence heart disease risk. By modeling these variables and analyzing their impact, I seek to provide insights into the correlation between lifestyle choices and heart disease susceptibility. This project was created as a part of David Kane's Data Science course to explore predictive modeling in the medical field.
+
+This project aims to predict the prognosis of various diseases using a healthcare dataset. The dataset includes features such as age, sex, general health, checkup frequency, exercise habits, and smoking history. My goal is to develop a predictive model to enhance disease prognosis accuracy.
+
+[Visit the Quarto Website](link-to-your-quarto-website)
+
+## Directory Structure
+- `data/`: Contains the raw and processed data files.
+- `scripts/`: Includes R scripts for data preprocessing, analysis, and modeling.
+- `notebooks/`: R Markdown files for exploratory data analysis and model training.
+
+## Contact
+For any questions or feedback, please contact [Wallstreet Petrus-Nihi](moyopetrus@gmail.com).

@@ -1,0 +1,65 @@
+---
+title: "Heart Disease Prediction by Age and Gender"
+author: "Wallstreet Petrus-Nihi"
+format: html
+editor: visual
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+### Research Question: How does the risk of heart disease vary across different age groups and between genders?
+
+### Introduction
+
+In our pursuit to better understand and predict heart disease, this project employs a data-driven approach to analyze how key demographic factors—such as age and gender—affect the likelihood of developing cardiovascular conditions. By leveraging advanced statistical models and data analysis techniques, we aim to uncover patterns and relationships within the dataset. This will provide valuable insights into the relative impact of these factors on heart disease risk, ultimately contributing to more informed health assessments and targeted prevention strategies.
+
+#### Posterior Predictions of Heart Disease Risk by Gender
+
+```{r, cache=TRUE, message=FALSE, warning=FALSE, error=FALSE}
+# Load required library
+library(ggplot2)
+library(dplyr)
+library(readr)
+
+# Read and rename the data
+data <- read_csv('C:/Data/CVD_cleaned.csv') 
+
+
+# Convert Heart_Disease to binary values (0 and 1)
+data <- data |>
+  mutate(Heart_Disease = recode(Heart_Disease, `Yes` = 1, `No` = 0))
+
+data_summary <- tibble(
+  Sex = c("Female", "Male"),
+  Total = c(160196, 148658),
+  Heart_Disease_Count = c(9898, 15073)
+) %>%
+  mutate(
+    Percentage = (Heart_Disease_Count / Total) * 100
+  )
+
+# Plot
+ggplot(data_summary, aes(x = Sex, y = Percentage, fill = Sex)) +
+  geom_bar(stat = "identity") +
+  labs(
+    title = "Percentage of Heart Disease Cases by Sex",
+    x = "Sex",
+    y = "Percentage (%)",
+    fill = "Sex"
+  ) +
+  scale_y_continuous(labels = scales::percent_format(scale = 1)) +
+  theme_minimal() +
+  theme(
+    legend.position = "none",
+    axis.text.x = element_text(angle = 45, hjust = 1)
+  )
+
+```
+
+The bar graph illustrates the percentage of individuals affected by heart disease, segmented by sex. The data reveals that men have a higher prevalence of heart disease compared to women. Specifically, approximately 10.1% of men in the dataset are affected by heart disease, whereas about 6.2% of women are affected.
+
+This discrepancy suggests that heart disease is more common among men than women within this dataset. The higher percentage of affected men could be attributed to a variety of factors, including lifestyle, genetic predispositions, or healthcare access. It's crucial to consider these aspects when analyzing health risks and developing targeted interventions for different demographics.
+
+Overall, the graph effectively highlights the increased risk of heart disease in men relative to women, providing valuable insights into the sex-based disparities in heart disease prevalence.

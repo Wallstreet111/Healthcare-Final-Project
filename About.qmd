@@ -1,0 +1,14 @@
+---
+title: "About"
+author: "Wallstreet Petrus-Nihi"
+format: html
+editor: visual
+---
+
+## About
+
+I am Wallstreet Petrus-Nihi (https://github.com/Wallstreet111), a data enthusiast with a passion for uncovering insights from data. Feel free to contact me at \[moyopetrus\@gmail.com\].
+
+This project focuses on predicting disease outcomes based on various lifestyle factors using a healthcare dataset. The full project can be accessed on [GitHub](https://github.com/Wallstreet111/Healthcare-Final-Project).
+
+This project was created as part of [Kane’s Data Science Bootcamp](https://bootcamp.davidkane.info/).
